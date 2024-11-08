@@ -10,14 +10,12 @@
     "format": "pnpm dlx @biomejs/biome format ./src --write"
   },
   "dependencies": {
-    "@tanstack/react-query": "5.18.1",
+    "@tanstack/react-query": "5.59.15",
     "@web3modal/wagmi": "4.1.11",
     "next": "14.1.1",
-    "react": "18.2.0",
+    "react": "18.3.1",
     "react-dom": "18.2.0",
-    "viem": "2.9.29",
-    "wagmi": "2.12.19"
-  },
+<<<<  },
   "devDependencies": {
     "@biomejs/biome": "1.5.2",
     "@types/node": "20.11.4",
