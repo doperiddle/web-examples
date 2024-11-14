@@ -24,11 +24,15 @@
     "@walletconnect/auth-client": "^2.1.0",
 98e2855920
     "ethers": "^5.7.0",
+
+    "nuxt-icon": "^0.6.9",
+    "pinia": "^2.2.4"
     "nuxt-icon": "^0.1.7",
 
     "ethers": "^6.13.4",
     "nuxt-icon": "^0.6.9"
     "pinia": "^2.0.23",
+>
     "qrcode.vue": "^3.3.3",
     "sass": "^1.80.3",
     "smart-truncate": "^1.0.1",
