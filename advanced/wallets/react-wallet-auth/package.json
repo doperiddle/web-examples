@@ -34,7 +34,7 @@
     "valtio": "1.13.2"
   },
   "devDependencies": {
-    "@types/node": "17.0.35",
+    "@types/node": "22.8.1",
     "@types/react": "18.0.9",
     "@walletconnect/types": "^2.7.6",
     "eslint": "9.0.0",
