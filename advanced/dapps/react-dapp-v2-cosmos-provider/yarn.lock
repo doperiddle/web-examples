@@ -4419,9 +4419,7 @@
   dependencies:
     "@walletconnect/events" "^1.0.1"
     "@walletconnect/time" "^1.0.2"
-    events "^3.3.0"
-
- 
+    events "^3.3
 "@walletconnect/jsonrpc-http-connection@^1.0.7":
   version "1.0.7"
   resolved "https://registry.yarnpkg.com/@walletconnect/jsonrpc-http-connection/-/jsonrpc-http-connection-1.0.7.tgz#a6973569b8854c22da707a759d241e4f5c2d5a98"
@@ -4616,7 +4614,11 @@
     "@walletconnect/jsonrpc-types" "1.0.3"
     "@walletconnect/keyvaluestorage" "^1.0.2"
     "@walletconnect/logger" "^2.0.1"
-    events "^3.3.0"
+    events "^3.3.0
+"@walletconnect/types@2.17.1":
+  version "2.17.1"
+  resolved "https://registry.yarnpkg.com/@walletconnect/types/-/types-2.17.1.tgz#425dedbe5853231252d081f61448c55ecd341c96"
+  integrity sha512-aiUeBE3EZZTsZBv5Cju3D0PWAsZCMks1g3hzQs9oNtrbuLL6pKKU0/zpKwk4vGywszxPvC3U0tBCku9LLsH/0A==
 
  
 "@walletconnect/types@2.17.1":
@@ -4636,6 +4638,20 @@
     "@walletconnect/keyvaluestorage" "1.1.1"
     "@walletconnect/logger" "2.1.2"
     events "3.3.0"
+"@walletconnect/universal-provider@2.10.0":
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/@walletconnect/universal-provider/-/universal-provider-2.10.0.tgz#565d6478dcb5cc66955e5f03d6a00f51c9bcac14"
+  integrity sha512-jtVWf+AeTCqBcB3lCmWkv3bvSmdRCkQdo67GNoT5y6/pvVHMxfjgrJNBOUsWQMxpREpWDpZ993X0JRjsYVsMcA==
+  dependencies:
+    "@walletconnect/jsonrpc-http-connection" "^1.0.7"
+    "@walletconnect/jsonrpc-provider" "1.0.13"
+    "@walletconnect/jsonrpc-types" "^1.0.2"
+    "@walletconnect/jsonrpc-utils" "^1.0.7"
+    "@walletconnect/logger" "^2.0.1"
+    "@walletconnect/sign-client" "2.10.0"
+    "@walletconnect/types" "2.10.0"
+    "@walletconnect/utils" "2.10.0"
+    events "^3.3.0"
 
 
 "@walletconnect/universal-provider@2.10.0":
@@ -4669,7 +4685,7 @@
     "@walletconnect/types" "2.17.2"
     "@walletconnect/utils" "2.17.2"
     events "3.3.0"
-    lodash "4.17.21"
+    lodash "4.17
 
 
 "@walletconnect/utils@2.10.0":
@@ -13581,7 +13597,11 @@ ufo@^1.5.4:
   resolved "https://registry.yarnpkg.com/ufo/-/ufo-1.5.4.tgz#16d6949674ca0c9e0fbbae1fa20a71d7b1ded754"
   integrity sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==
 
+
+uint8arrays@^3.0.0:
+
 uint8arrays@3.1.0, uint8arrays@^3.0.0:
+
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/uint8arrays/-/uint8arrays-3.1.0.tgz#8186b8eafce68f28bd29bd29d683a311778901e2"
   integrity sha512-ei5rfKtoRO8OyOIor2Rz5fhzjThwIHJZ3uyDPnDHTXbP0aMQ1RN/6AI5B5d9dBxJOU+BvOAk7ZQ1xphsX8Lrog==
