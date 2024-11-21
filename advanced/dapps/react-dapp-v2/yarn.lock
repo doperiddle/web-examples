@@ -3029,19 +3029,28 @@
   resolved "https://registry.yarnpkg.com/@multiversx/sdk-bls-wasm/-/sdk-bls-wasm-0.3.5.tgz#2e83308fdc7a0928c6d5a7f910d796fd8eb2d90b"
   integrity sha512-c0tIdQUnbBLSt6NYU+OpeGPYdL0+GV547HeHT8Xc0BKQ7Cj0v82QUoA2QRtWrR1G4MNZmLsIacZSsf6DrIS2Bw==
 
-"@multiversx/sdk-core@12.18.0":
-  version "12.18.0"
-  resolved "https://registry.yarnpkg.com/@multiversx/sdk-core/-/sdk-core-12.18.0.tgz#ae99665f9afb2bd4f1e325cb7daabb1dbcc55ca6"
-  integrity sha512-F+xGslPMkkZ0S/Q8UJZsMYl0mgHIuK/GdVsNFPiMKxQsKkxA2LTjNdPxVxjwgvRmN7WfdsTtQvmlsA5O1NYhBg==
+"@multiversx/sdk-core@13.13.1":
+  version "13.13.1"
+  resolved "https://registry.yarnpkg.com/@multiversx/sdk-core/-/sdk-core-13.13.1.tgz#c0fcf6713efcbab30a3075c5bca2e47b6ffbbdef"
+  integrity sha512-tQD0Z8ma2D+NRXLP8CAK8auwaW9sLehlH1tCyoY6n7x5hT6zuNEPCkUGCen2TzTbOMs5DHO1w2fUZQcrO0XKiA==
   dependencies:
     "@multiversx/sdk-transaction-decoder" "1.0.2"
+    "@noble/ed25519" "1.7.3"
+    "@noble/hashes" "1.3.0"
     bech32 "1.1.4"
-    bignumber.js "9.0.1"
     blake2b "2.1.3"
     buffer "6.0.3"
-    json-duplicate-key-handle "1.0.0"
+    ed25519-hd-key "1.1.2"
+    ed2curve "0.3.0"
+    json-bigint "1.0.0"
     keccak "3.0.2"
-    protobufjs "7.2.4"
+    scryptsy "2.1.0"
+    tweetnacl "1.0.3"
+    uuid "8.3.2"
+  optionalDependencies:
+    "@multiversx/sdk-bls-wasm" "0.3.5"
+    axios "^1.7.4"
+    bip39 "3.1.0"
 
 "@multiversx/sdk-transaction-decoder@1.0.2":
   version "1.0.2"
@@ -4359,11 +4368,6 @@
   integrity sha512-jML7s2NAzMWc//QSJ1a3prpk78cOPchGvXJsC3C6R6PSMoooztvRVQEz89gmBTBY1SPMaqo5teB4uNHPdetShQ==
   dependencies:
     undici-types "~6.19.2"
-
-"@types/node@>=13.7.0":
-  version "20.2.3"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.2.3.tgz#b31eb300610c3835ac008d690de6f87e28f9b878"
-  integrity sha512-pg9d0yC4rVNWQzX8U7xb4olIOFuuVL9za3bzMT2pu2SU0SNEi66i2qrvhE2qt0HvkhuCaWJu7pLNOt/Pj8BIrw==
 
 "@types/node@^12.12.54", "@types/node@^12.12.6":
   version "12.20.55"
@@ -5971,11 +5975,6 @@ babel-preset-react-app@^10.0.1:
     babel-plugin-macros "^3.1.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
 
-backslash@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/backslash/-/backslash-0.2.0.tgz#6c3c1fce7e7e714ccfc10fd74f0f73410677375f"
-  integrity sha512-Avs+8FUZ1HF/VFP4YWwHQZSGzRPm37ukU1JQYQWijuHhtXdOuAzcZ8PcAzfIw898a8PyBzdn+RtnKA6MzW0X2A==
-
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
@@ -6042,11 +6041,6 @@ bigint-buffer@^1.1.5:
   dependencies:
     bindings "^1.3.0"
 
-bignumber.js@9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.0.1.tgz#8d7ba124c882bfd8e43260c67475518d0689e4e5"
-  integrity sha512-IdZR9mh6ahOBv/hYGiXyVuyCetmGJhtYkqLBpTStdhEGjegpPlUawydyaF3pbIOFynJTpllEs+NP+CS9jKFLjA==
-
 bignumber.js@^9.0.0, bignumber.js@^9.0.1:
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-9.1.1.tgz#c4df7dc496bd849d4c9464344c1aa74228b4dac6"
@@ -6079,7 +6073,7 @@ bip39@3.0.2:
     pbkdf2 "^3.0.9"
     randombytes "^2.0.1"
 
-bip39@^3.0.2:
+bip39@3.1.0, bip39@^3.0.2:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/bip39/-/bip39-3.1.0.tgz#c55a418deaf48826a6ceb34ac55b3ee1577e18a3"
   integrity sha512-c9kiwdk45Do5GL0vJMe7tS95VjCii65mYAH7DfWl3uW8AVzXKQVUm64i3hzVybBDMp9r7j9iNxR85+ul8MdN/A==
@@ -11118,17 +11112,17 @@ jsesc@~0.5.0:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
   integrity sha512-uZz5UnB7u4T9LvwmFqXii7pZSouaRPorGs5who1Ip7VO0wxanFvBL7GkM6dTHlgX+jhBApRetaWpnDabOeTcnA==
 
+json-bigint@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/json-bigint/-/json-bigint-1.0.0.tgz#ae547823ac0cad8398667f8cd9ef4730f5b01ff1"
+  integrity sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ==
+  dependencies:
+    bignumber.js "^9.0.0"
+
 json-buffer@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/json-buffer/-/json-buffer-3.0.1.tgz#9338802a30d3b6605fbe0613e094008ca8c05a13"
   integrity sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==
-
-json-duplicate-key-handle@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/json-duplicate-key-handle/-/json-duplicate-key-handle-1.0.0.tgz#0678bd17822d23d8c0d0958b43011875fa37f363"
-  integrity sha512-OLIxL+UpfwUsqcLX3i6Z51ChTou/Vje+6bSeGUSubj96dF/SfjObDprLy++ZXYH07KITuEzsXS7PX7e/BGf4jw==
-  dependencies:
-    backslash "^0.2.0"
 
 json-parse-even-better-errors@^2.3.0, json-parse-even-better-errors@^2.3.1:
   version "2.3.1"
@@ -11513,11 +11507,6 @@ long@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/long/-/long-4.0.0.tgz#9a7b71cfb7d361a194ea555241c92f7468d5bf28"
   integrity sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==
-
-long@^5.0.0:
-  version "5.2.3"
-  resolved "https://registry.yarnpkg.com/long/-/long-5.2.3.tgz#a3ba97f3877cf1d778eccbcb048525ebb77499e1"
-  integrity sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==
 
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
@@ -13317,24 +13306,6 @@ prop-types@^15.7.2, prop-types@^15.8.1:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.13.1"
-
-protobufjs@7.2.4:
-  version "7.2.4"
-  resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-7.2.4.tgz#3fc1ec0cdc89dd91aef9ba6037ba07408485c3ae"
-  integrity sha512-AT+RJgD2sH8phPmCf7OUZR8xGdcJRga4+1cOaXJ64hvcSkVhNcRHOwIxUatPH15+nj59WAGTDv3LSGZPEQbJaQ==
-  dependencies:
-    "@protobufjs/aspromise" "^1.1.2"
-    "@protobufjs/base64" "^1.1.2"
-    "@protobufjs/codegen" "^2.0.4"
-    "@protobufjs/eventemitter" "^1.1.0"
-    "@protobufjs/fetch" "^1.1.0"
-    "@protobufjs/float" "^1.0.2"
-    "@protobufjs/inquire" "^1.1.0"
-    "@protobufjs/path" "^1.1.2"
-    "@protobufjs/pool" "^1.1.0"
-    "@protobufjs/utf8" "^1.1.0"
-    "@types/node" ">=13.7.0"
-    long "^5.0.0"
 
 protobufjs@~6.10.2:
   version "6.10.3"
