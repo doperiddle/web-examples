@@ -93,7 +93,7 @@
     "@types/styled-components": "^5.1.25",
     "eslint": "9.15.0",
     "eslint-config-next": "15.0.2",
-    "eslint-plugin-package-json": "^0.15.4",
+    "eslint-plugin-package-json": "^0.18.0",
     "jsonc-eslint-parser": "^2.4.0",
     "prettier": "^3.3.3",
     "typescript": "^5.6.3"
