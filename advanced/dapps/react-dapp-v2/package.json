@@ -81,7 +81,7 @@
     "@types/jest": "^27.4.0",
 
     "@types/pino": "^7.0.5",
-    "@types/prop-types": "^15.7.4",
+    "@types/prop-types": "^15.7.13",
     "@types/qr-image": "^3.2.5",
  
     "@types/react": "18.3.12",
