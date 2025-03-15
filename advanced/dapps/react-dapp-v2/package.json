@@ -43,7 +43,7 @@
 
     "@walletconnect/utils": "2.19.0",
     "@web3modal/standalone": "2.4.3",
-    "axios": "^1.7.8",
+    "axios": "^1.8.2",
     "blockies-ts": "^1.0.0",
     "bs58": "^5.0.0",
     "cosmos-wallet": "^1.2.0",
