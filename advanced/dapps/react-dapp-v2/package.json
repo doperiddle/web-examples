@@ -43,7 +43,7 @@
 
     "@walletconnect/utils": "2.19.0",
     "@web3modal/standalone": "2.4.3",
-    "axios": "^1.8.2",
+    "axios": "^1.8.3",
     "blockies-ts": "^1.0.0",
     "bs58": "^5.0.0",
     "cosmos-wallet": "^1.2.0",
@@ -51,7 +51,7 @@
     "ethereumjs-util": "^7.0.6",
     "ethers": "^6.0.0",
     "fp-ts": "^2.13.1",
-    "next": "15.0.2",
+    "next": "15.2.3",
     "prop-types": "^15.7.2",
     "qr-image": "^3.2.0",
     "react": "^17.0.2",
