@@ -11,7 +11,7 @@
     "prettier:write": "prettier --write '**/*.{js,ts,jsx,tsx}'"
   },
   "dependencies": {
-    "@celo/wallet-base": "^6.0.0",
+    "@celo/wallet-base": "^6.0.4",
     "@ethereumjs/tx": "^4.0.0",
     "@kadena/client": "^1.3.0",
     "@kadena/cryptography-utils": "^0.4.0",
